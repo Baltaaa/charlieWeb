@@ -5,13 +5,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- METAS -->
+    <meta name="description" content="Sandra Bruschetti es cocinera y propietaria de la tienda física “Charlie Gourmet” fundada por su
+    padre hace 30 años.">
     <link rel="shortcut icon" href="../multimedia/logo.png">
     <title>Charlie Gourmet</title>
-    <!-- LINKEO TAILWIND.CSS -->
-    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+        <!-- LINKEO TAILWIND.CSS -->
+        <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- LINK SALIDA CSS CON SASS -->
-    <link rel="stylesheet" href="/css/estilo.css">
+    <link rel="stylesheet" href="/scss/estilo.css">
 
     <!-- link tipografias -->
 
@@ -19,39 +28,40 @@
     <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Architects+Daughter&display=swap"
         rel="stylesheet">
-    <script src="/js/index.js"></script>
 </head>
 
 <body>
     <nav class="bg-gray-500 py-5 relative md:static">
-        <div class="container mx-auto flex px-8 xl:px-2">
-            <div class="w-max rounded-full flex flex-grow ml-7 lg:ml-0">
-                <a href="index.html"><img class="w-20 lg:w-32" src="../multimedia/logo.png" alt="logoCharlie"></a>
+        <div class="mx-auto flex xl:px-2">
+            <div class="w-max rounded-full flex flex-grow ml-7">
+                <a href="../index.html"><img class="w-16 md:w-20 lg:w-32" src="../multimedia/logo.png" alt="logoCharlie"></a>
             </div>
-            <div class="w-12 h-12 flex self-center lg:w-20 lg:hidden">
+            <div class="w-12 h-12 flex  lg:w-4/5 lg:h-2/5 mr-8 self-center lg:hidden">
                 <img src="../multimedia/menuBurger.png" onclick="openMenu();" alt="menuBurger">
             </div>
             <div id="menuBurger"
-                class="burgerMenu hidden bg-gray-900 mt-28 -top-0 lg:my-0 md:mb-10 lg:bg-transparent lg:flex flex-grow items-center justify-center absolute top-40 left-0 lg:relative lg:top-0 flex flex-col lg:flex-row w-full text-center">
-                <a class="text-white mx-2 my-2 font-bold bg-gray-900 lg:bg-gray-500 border-gray-500 border-t-4 lg:rounded-lg lg:border-4 lg:border-gray-900 lg:hover:border-gray-900 hover:border-4 hover:border-white text-center ease-in-out hover:text-white hover:bg-gray-900 hover:rounded-3xl hover:border-black hover:border py-2.5 px-5 transition duration-700"
+                class="burgerMenu hidden bg-gray-900 lg:bg-transparent lg:flex flex-grow items-center justify-center absolute left-0 top-24 md:top-28  lg:relative lg:top-0 flex flex-col lg:flex-row w-full text-center">
+                <a class="text-white mx-2 my-2 font-bold   lg:rounded-lg  hover:ease-in-out  text-center hover:text-black hover:rounded-full py-2.5 px-5 duration-400 tracking-wider"
                     href="/secciones/tienda.html">Tienda</a>
-                <a class="text-white mx-2 my-2 font-bold bg-gray-900 lg:bg-gray-500 border-gray-500 border-t-4 lg:rounded-lg lg:border-4 lg:border-gray-900 lg:hover:border-gray-900 hover:border-4 hover:border-white text-center ease-in-out hover:text-white hover:bg-gray-900 hover:rounded-3xl hover:border-black hover:border py-2.5 px-5 transition duration-700"
+                <a class="text-white mx-2 my-2 font-bold   lg:rounded-lg  hover:ease-in-out  text-center hover:text-black hover:rounded-full py-2.5 px-5 duration-400 tracking-wider"
                     href="/secciones/historia.html">Historia</a>
-                <a class="text-white mx-2 my-2 font-bold bg-gray-900 lg:bg-gray-500 border-gray-500 border-t-4 lg:rounded-lg lg:border-4 lg:border-gray-900 lg:hover:border-gray-900 hover:border-4 hover:border-white text-center ease-in-out hover:text-white hover:bg-gray-900 hover:rounded-3xl hover:border-black hover:border py-2.5 px-5 transition duration-700"
+                <a class="text-white mx-2 my-2 font-bold   lg:rounded-lg  hover:ease-in-out  text-center hover:text-black hover:rounded-full py-2.5 px-5 duration-400 tracking-wider"
                     href="/secciones/galeria.html">Galeria</a>
-                <a class="text-white mx-2 my-2 font-bold bg-gray-900 lg:bg-gray-500 border-gray-500 border-t-4 lg:rounded-lg lg:border-4 lg:border-gray-900 lg:hover:border-gray-900 hover:border-4 hover:border-white text-center ease-in-out hover:text-white hover:bg-gray-900 hover:rounded-3xl hover:border-black hover:border py-2.5 px-5 transition duration-700"
+                <a class="text-white mx-2 my-2 font-bold   lg:rounded-lg  hover:ease-in-out  text-center hover:text-black hover:rounded-full py-2.5 px-5 duration-400 tracking-wider"
                     href="/secciones/contacto.html">Contacto</a>
             </div>
         </div>
     </nav>
 
-    <div class="flex flex-grow flex-col w-screen h-screen">
+    <div class="flex max-h-fit flex-col w-screen ">
         <main class="flex-grow">
             <div class="tituloIndex mt-3">
-                <h1 class="text-center text-3xl md:text-5xl lg:text-5xl xl:text-7xl"><strong> Sandra Bruschetti </strong> Cocina de
+                <h1 class="text-center text-4xl md:text-5xl w-full lg:text-7xl"><strong> Sandra Bruschetti
+                    </strong> Cocina de
                     autor</h1>
             </div>
-            <section class="flex flex-col px-5 lg:px-16 lg:flex-row container self-center mx-auto justify-center items-center lg:gap-20">
+            <section
+                class="flex flex-col px-5 lg:px-16 lg:flex-row container self-center mx-auto justify-center items-center lg:gap-20">
                 <div id="slider-container">
                     <div class="my-10 lg:w-6/12 self-center" id="slider-box">
                         <div class="slider-element">
@@ -72,8 +82,9 @@
                     </div>
                 </div>
                 <div class="self-center my-4 lg:my-10 justify-center lg:w-6/12">
-                    <p class="text-black text-semibold text-md lg:text-xl">
-                        Sandra Bruschetti es cocinera y propietaria de la tienda física <strong class="text-lg text-bold"> “Charlie
+                    <p class="text-black text-semibold text-md lg:text-xl" id="parrafoIndex">
+                        Sandra Bruschetti es cocinera y propietaria de la tienda física <strong
+                            class="text-lg text-bold"> “Charlie
                             Gourmet”</strong> fundada por su
                         padre hace 30 años.
                         Realiza caterings para eventos y ha desarrollado una línea de cocina italiana que incluye pasta
@@ -83,7 +94,8 @@
                         productos
                         frescos, naturales y de temporada.
                         Pertenece a la cuarta generación de gastronómicos de su familia en la ciudad de Balcarce.
-                        Realizó su propio programa de televisión <strong class="text-lg text-bold">“La mía cocina”</strong>. En sus
+                        Realizó su propio programa de televisión <strong class="text-lg text-bold">“La mía
+                            cocina”</strong>. En sus
                         redes
                         comparte sus productos,
                         recetas de cocina y su forma de vida.
@@ -93,7 +105,7 @@
             </section>
         </main>
 
-        <footer class="bg-gray-300 w-full sticky bottom-0">
+        <footer class="bg-gray-300 w-full sticky lg:fixed bottom-0">
             <div class="flex justify-center">
                 <div class="px-6 py-2 lg:px-32 xl:px-44"><a target="_blank"
                         href="https://m.facebook.com/sandrabruschetti64/?locale2=es_LA"><img class="w-12 md:w-16"
@@ -107,8 +119,6 @@
             </div>
         </footer>
     </div>
-
-
 </body>
 
 </html>

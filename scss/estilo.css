@@ -1,0 +1,226 @@
+@import url("//fonts.googleapis.com/css?family=Bungee+Shade");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+          scroll-behavior: smooth;
+}
+html::-webkit-scrollbar{
+  width: 18px;
+  background: black;
+}
+html::-webkit-scrollbar-thumb{
+background: rgb(163 163 163 / 0.5);
+border-radius: 1.5rem;
+width: 10px;
+justify-content: center;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: #a68a64;
+}
+
+body nav {
+  background-image: url("../multimedia/fondoNavbar.png");
+  background-size: 100%;
+  background-position-y: center;
+  background-repeat: no-repeat;
+  background-position-x: center;
+}
+
+body nav #containerNav #btnCarrito img {
+  vertical-align: top;
+}
+
+body nav .burgerMenu {
+  background-image: url("../multimedia/fondoNavbar.png");
+}
+
+body nav .burgerMenu a:hover {
+  background-color: #dee2ff;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
+  font-weight: bold;
+}
+
+main .tituloContacto h1 {
+  font-family: "Lucida Grande", Lucida, Verdana, sans-serif;
+  color: #dee2ff;
+  text-shadow: 0 1px 0 #353535, 0 2px 0 #353535, 0 3px 0 #353535, 0 4px 0 #353535, 0 5px 0 #353535, 0 6px 0 transparent, 0 7px 0 transparent, 0 8px 0 transparent, 0 9px 0 transparent, 0 10px 10px rgba(0, 0, 0, 0.6);
+}
+
+@media (min-width: 1024px) {
+  main .tituloContacto h1 {
+    -webkit-animation: bounce 1s infinite alternate;
+            animation: bounce 1s infinite alternate;
+  }
+}
+
+footer {
+  background-image: url(../multimedia/fondoNavbar.png);
+}
+
+.padre .cuerpoHistoria .cuerpoContainer .hijoContainer .tituloHistoria {
+  font-family: "Lucida Grande", Lucida, Verdana, sans-serif;
+  color: #dee2ff;
+  text-shadow: 0 1px 0 #353535, 0 2px 0 #353535, 0 3px 0 #353535, 0 4px 0 #353535, 0 5px 0 #353535, 0 6px 0 transparent, 0 7px 0 transparent, 0 8px 0 transparent, 0 9px 0 transparent, 0 10px 10px rgba(0, 0, 0, 0.6);
+}
+
+@media (min-width: 1024px) {
+  .padre .cuerpoHistoria .cuerpoContainer .hijoContainer .tituloHistoria {
+    -webkit-animation: bounce 1s infinite alternate;
+            animation: bounce 1s infinite alternate;
+  }
+}
+
+@keyframes bounce {
+  from {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  to {
+    -webkit-transform: translateY(-15px);
+            transform: translateY(-15px);
+  }
+}
+
+@-webkit-keyframes bounce {
+  from {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  to {
+    -webkit-transform: translateY(-15px);
+            transform: translateY(-15px);
+  }
+}
+
+main .tituloGaleria h1 {
+  font-family: "Lucida Grande", Lucida, Verdana, sans-serif;
+  color: #dee2ff;
+  text-shadow: 0 1px 0 #353535, 0 2px 0 #353535, 0 3px 0 #353535, 0 4px 0 #353535, 0 5px 0 #353535, 0 6px 0 transparent, 0 7px 0 transparent, 0 8px 0 transparent, 0 9px 0 transparent, 0 10px 10px rgba(0, 0, 0, 0.6);
+}
+
+@media (min-width: 1024px) {
+  main .tituloGaleria h1 {
+    -webkit-animation: bounce 1s infinite alternate;
+            animation: bounce 1s infinite alternate;
+  }
+}
+
+main #contenedorProductos .sombrahover {
+  -webkit-box-shadow: -1px -1px 46px 20px white;
+  box-shadow: -1px -1px 46px 20px white;
+}
+
+main .tituloTienda h1 {
+  font-family: "Lucida Grande", Lucida, Verdana, sans-serif;
+  color: #dee2ff;
+  text-shadow: 0 1px 0 #353535, 0 2px 0 #353535, 0 3px 0 #353535, 0 4px 0 #353535, 0 5px 0 #353535, 0 6px 0 transparent, 0 7px 0 transparent, 0 8px 0 transparent, 0 9px 0 transparent, 0 10px 10px rgba(0, 0, 0, 0.6);
+}
+
+@media (min-width: 1024px) {
+  main .tituloTienda h1 {
+    -webkit-animation: bounce 1s infinite alternate;
+            animation: bounce 1s infinite alternate;
+  }
+}
+
+main .tituloIndex h1 {
+  font-family: "Lucida Grande", Lucida, Verdana, sans-serif;
+  color: #dee2ff;
+  text-shadow: 0 1px 0 #353535, 0 2px 0 #353535, 0 3px 0 #353535, 0 4px 0 #353535, 0 5px 0 #353535, 0 6px 0 transparent, 0 7px 0 transparent, 0 8px 0 transparent, 0 9px 0 transparent, 0 10px 10px rgba(0, 0, 0, 0.6);
+}
+
+@media (min-width: 1024px) {
+  main .tituloIndex h1 {
+    -webkit-animation: bounce 1s infinite alternate;
+            animation: bounce 1s infinite alternate;
+  }
+}
+
+input[name="slider-select-element"] {
+  display: none;
+}
+
+#slider-arrows {
+  margin: -10% auto 0 auto;
+  width: 80%;
+}
+
+#slider-box {
+  -webkit-animation: autoSlider 15s infinite linear;
+  animation: autoSlider 15s infinite linear;
+  -webkit-transition: all 0.75s ease;
+  transition: all 0.75s ease;
+  height: 100%;
+  width: 300%;
+}
+
+#slider-container {
+  height: 20%;
+  margin: 0 auto;
+  overflow: hidden;
+  text-align: left;
+  width: 80%;
+}
+
+.slider-element {
+  float: left;
+  width: 33.333%;
+}
+
+@-webkit-keyframes autoSlider {
+  0% {
+    margin-left: 0;
+  }
+  30% {
+    margin-left: 0;
+  }
+  35% {
+    margin-left: -100%;
+  }
+  65% {
+    margin-left: -100%;
+  }
+  70% {
+    margin-left: -200%;
+  }
+  95% {
+    margin-left: -200%;
+  }
+  100% {
+    margin-left: 0;
+  }
+}
+
+@keyframes autoSlider {
+  0% {
+    margin-left: 0;
+  }
+  30% {
+    margin-left: 0;
+  }
+  35% {
+    margin-left: -100%;
+  }
+  65% {
+    margin-left: -100%;
+  }
+  70% {
+    margin-left: -200%;
+  }
+  95% {
+    margin-left: -200%;
+  }
+  100% {
+    margin-left: 0;
+  }
+}
+/*# sourceMappingURL=estilo.css.map */

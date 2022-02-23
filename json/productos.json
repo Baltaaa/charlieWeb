@@ -1,0 +1,102 @@
+[
+    {
+    "id": "1",
+    "nombreProd": "Raviolones en pasta verde (espinaca, perejil, albahaca) rellenos con calabaza asada, Ciboulette, queso crema , parmesano y queso Dambo.",
+    "precio": 300,
+    "cantidad": 15,
+    "stock": true,
+    "categoria": "Pastas",
+    "img": "../multimedia/pastaTienda15.jpg",
+    "nombreCarrito": "Raviolones de calabaza"
+},
+{
+    "id": "2",
+    "nombreProd": "Gran RAVIOLI en pasta al huevo rellenos con suprema de pollo, cebolla procesada, crema y queso Regianito.",
+    "precio": 330,
+    "cantidad": 12,
+    "stock": true,
+    "categoria": "Pastas",
+    "img": "../multimedia/pastaTienda9.jpg",
+    "nombreCarrito": "Gran Ravioli"
+},
+{
+    "id": "3",
+    "nombreProd": "Raviolones en pasta al huevo con espinaca, acelga, cebolla, ricota, crema, quesos Reggianito y dambo.",
+    "precio": 350,
+    "cantidad": 12,
+    "stock": true,
+    "categoria": "Pastas",
+    "img": "../multimedia/pastaTienda14.jpg",
+    "nombreCarrito": "Raviolones de verduras"
+},
+{
+    "id": "4",
+    "nombreProd": "Raviolones en pasta al morrón rojo rellenos con hongos de pino, champignones, cebolla, quesos cheedar, Dambo y parmesano.",
+    "precio": 350,
+    "cantidad": 12,
+    "stock": true,
+    "categoria": "Pastas",
+    "img": "../multimedia/pastaTienda8.jpg",
+    "nombreCarrito": "Raviolones de hongos"
+},
+{
+    "id": "5",
+    "nombreProd": "Culurgiones rellenos con papa andina, aceite de oliva extra virgen, queso gruyere, hojitas de albahaca y menta.",
+    "precio": 350,
+    "cantidad": 12,
+    "stock": true,
+    "categoria": "Pastas",
+    "img": "../multimedia/pastaTienda7.jpg",
+    "nombreCarrito": "Culurgiones"
+},
+{
+    "id": "6",
+    "nombreProd": "PANZOTTI en pasta al huevo, rellenos con ricota, espinaca, jamón cocido cagnoli, nueces, crema de leche, queso Parmesano.",
+    "precio": 350,
+    "cantidad": 12,
+    "stock": false,
+    "categoria": "Pastas",
+    "img": "../multimedia/pastaTienda13.jpg",
+    "nombreCarrito": "Panzzottis de jamon y espinaca"
+},
+{
+    "id": "7",
+    "nombreProd": "Raviolones en pasta al huevo rellenos con suprema de pollo, verdeo, crema de leche, quesos Dambo y Parmesano.",
+    "precio": 350,
+    "cantidad": 15,
+    "stock": true,
+    "categoria": "Pastas",
+    "img": "../multimedia/pastaTienda12.jpg",
+    "nombreCarrito": "Raviolones de pollo al verdeo"
+},
+{
+    "id": "8",
+    "nombreProd": "Tortellini en pasta de espinaca, albahaca y perejil con tomates cherry salteados en ajo y albahaca fresca con queso parmesano, ricota y queso Dambo.",
+    "precio": 350,
+    "cantidad": 12,
+    "stock": false,
+    "categoria": "Pastas",
+    "img": "../multimedia/pastaTienda2.jpg",
+    "nombreCarrito": "Tortellini de cherry's"
+},
+{
+    "id": "9",
+    "nombreProd": "Raviolones en pasta de remolacha rellenos con cebolla caramelizada, crema, queso parmesano y queso Dambo.",
+    "precio": 350,
+    "cantidad": 12,
+    "stock": true,
+    "categoria": "Pastas",
+    "img": "../multimedia/pastaTienda3.jpg",
+    "nombreCarrito": "Raviolones de cebolla caramelizada"
+},
+{
+    "id": "10",
+    "nombreProd": "Raviolones en pasta al huevo rellenos de cordero al Malbec.",
+    "precio": 600,
+    "cantidad": 12,
+    "stock": true,
+    "categoria": "Pastas",
+    "img": "../multimedia/pastas3.jpeg",
+    "nombreCarrito": "Raviolones de cordero al Malbec"
+}
+]

@@ -1,11 +1,10 @@
 {
   "name": "webcharlie",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build-css": "node-sass --include-path scss scss/estilo.scss css/estilo.css",
+    "build-css": "node-sass --include-path scss scss/estilo.scss scss/estilo.map.css",
     "watch-css": "nodemon -e scss -x \"npm     run build-css\""
   },
   "author": "",
@@ -13,5 +12,17 @@
   "devDependencies": {
     "node-sass": "^6.0.1",
     "nodemon": "^2.0.15"
-  }
+  },
+  "dependencies": {
+    "jquery": "3.6.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Baltaaa/charlieWeb.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Baltaaa/charlieWeb/issues"
+  },
+  "homepage": "https://github.com/Baltaaa/charlieWeb#readme",
+  "description": ""
 }

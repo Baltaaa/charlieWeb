@@ -165,6 +165,8 @@ dist
 # Support for Project snippet scope
 .vscode/*.code-snippets
 
+.vscode/
+
 ### Windows ###
 # Windows thumbnail cache files
 Thumbs.db

@@ -1,4 +1,3 @@
-
 * {
     padding: 0;
     margin: 0;
@@ -9,17 +8,36 @@ body {
     overflow-x: hidden;
     background-color: #a68a64;
 
+    // NAVBAR
     nav {
-        background-image: url(../multimedia/fondoNavbar.png);
+        background-image: url('../multimedia/fondoNavbar.png');
         background-size: 100%;
         background-position-y: center;
         background-repeat: no-repeat;
         background-position-x: center;
 
-        .burgerMenu{
-            background-image: url(../multimedia/fondoNavbar.png);
-            a{
-                background-color: black;
+        #containerNav {
+            #btnCarrito {
+                img {
+                    vertical-align: top;
+                    // background: url('../multimedia/carrito.png') no-repeat center center / 100% auto;
+                }
+            }
+
+        }
+
+        .burgerMenu {
+            background-image: url('../multimedia/fondoNavbar.png');
+
+            a {
+                &:hover {
+                    background-color: #dee2ff;
+                    letter-spacing: 1px;
+                    text-transform: capitalize;
+                    transition: 0.5s;
+                    transition-timing-function: ease;
+                    font-weight: bold;
+                }
             }
         }
     }
@@ -59,9 +77,12 @@ main {
 }
 
 
+
+
+
 // FOOTER
 footer {
-    background-image: url(../multimedia/fondoNavbar.png);
+    background-image: url('../multimedia/fondoNavbar.png');
 }
 
 
@@ -149,7 +170,21 @@ main {
 
 // TIENDA
 
+
+
 main {
+
+    #carrito{
+        background: linear-gradient(186deg, rgba(0,0,0,1) 0%, rgba(17,24,39,1) 35%);
+    }
+    #contenedorProductos {
+        .sombrahover {
+            -webkit-box-shadow: -1px -1px 46px 20px rgba(255, 255, 255, 1);
+            -moz-box-shadow: -1px -1px 46px 20px rgba(255, 255, 255, 1);
+            box-shadow: -1px -1px 46px 20px rgba(255, 255, 255, 1);
+        }
+    }
+
     .tituloTienda {
         h1 {
             font-family: "Lucida Grande", Lucida, Verdana, sans-serif;
@@ -172,6 +207,7 @@ main {
         }
     }
 }
+
 
 
 

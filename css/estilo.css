@@ -8,15 +8,22 @@ body {
   overflow-x: hidden;
   background-color: #a68a64; }
   body nav {
-    background-image: url(../multimedia/fondoNavbar.png);
+    background-image: url("../multimedia/fondoNavbar.png");
     background-size: 100%;
     background-position-y: center;
     background-repeat: no-repeat;
     background-position-x: center; }
+    body nav #containerNav #btnCarrito img {
+      vertical-align: top; }
     body nav .burgerMenu {
-      background-image: url(../multimedia/fondoNavbar.png); }
-      body nav .burgerMenu a {
-        background-color: black; }
+      background-image: url("../multimedia/fondoNavbar.png"); }
+      body nav .burgerMenu a:hover {
+        background-color: #dee2ff;
+        letter-spacing: 1px;
+        text-transform: capitalize;
+        transition: 0.5s;
+        transition-timing-function: ease;
+        font-weight: bold; }
 
 main .tituloContacto h1 {
   font-family: "Lucida Grande", Lucida, Verdana, sans-serif;
@@ -27,7 +34,7 @@ main .tituloContacto h1 {
       animation: bounce 1s infinite alternate; } }
 
 footer {
-  background-image: url(../multimedia/fondoNavbar.png); }
+  background-image: url("../multimedia/fondoNavbar.png"); }
 
 .padre .cuerpoHistoria .cuerpoContainer .hijoContainer .tituloHistoria {
   font-family: "Lucida Grande", Lucida, Verdana, sans-serif;
@@ -56,6 +63,11 @@ main .tituloGaleria h1 {
   @media (min-width: 1024px) {
     main .tituloGaleria h1 {
       animation: bounce 1s infinite alternate; } }
+
+main #contenedorProductos .sombrahover {
+  -webkit-box-shadow: -1px -1px 46px 20px white;
+  -moz-box-shadow: -1px -1px 46px 20px white;
+  box-shadow: -1px -1px 46px 20px white; }
 
 main .tituloTienda h1 {
   font-family: "Lucida Grande", Lucida, Verdana, sans-serif;
