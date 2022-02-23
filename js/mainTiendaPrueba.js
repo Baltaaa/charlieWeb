@@ -63,35 +63,67 @@ fetch('/json/productos.json')
           </div>
           </div>`;
         }
+
+
         const buttonCart = document.querySelectorAll('.añadirAlCarrito')
         for (let botones of buttonCart) {
             botones.addEventListener('click', (e) => {
                 // Detectar producto   
-                let targetDelProducto = e.target
+                let target = e.target
                 console.log('------------------------------------');
-                console.log(targetDelProducto.id);
+                console.log(target.id);
                 console.log('------------------------------------');
-                let productoParaElCarrito = dataArray.find(prod => prod.id === targetDelProducto.id)
+                let productoParaElCarrito = dataArray.find(prod => prod.id === target.id)
                 const existe = carritoDeCompras.includes(productoParaElCarrito)
                 
                 // Detectar si ya existe en el carrito
                 if (existe == true){
-              productoParaElCarrito.cantidad ++
-              imprimirEnCarrito(producto)
-              actualizarTotal()
-              // eliminarProductosDelCarrito()
-              } else{
-              carritoDeCompras.push(productoParaElCarrito)
-              imprimirEnCarrito(producto)
-              actualizarTotal()
-              // eliminarProductosDelCarrito()
+            productoParaElCarrito.cantidad ++
+            imprimirEnCarrito(producto)
+            actualizarTotal()
+              eliminarProductosDelCarrito()
+            } else{
+            carritoDeCompras.push(productoParaElCarrito)
+            imprimirEnCarrito(producto)
+            actualizarTotal()
+            eliminarProductosDelCarrito()
           }  
           })
-      }
-    }
+        }
+
+
+        
+
+
+    } 
     
+    function eliminarProductosDelCarrito(){
+        let buttons = document.querySelectorAll(".botonParaEliminarProducto")
+        for(let button of buttons){
+            button.addEventListener('click', (e) => {
+              let producto = carritoDeCompras.find(productos => productos.id === e.target.id)
+              console.log(producto)
+              if (producto.cantidad >= 1){
+                producto.cantidad --
+                $("#productosCarrito").empty()
+                imprimirEnCarrito()
+                actualizarTotal()
+                eliminarProductosDelCarrito()
+            } 
+            if (producto.cantidad == 0){
+                let div = document.getElementById("div" + producto.id)
+                div.parentNode.removeChild(div)
+                let Array = carritoDeCompras.indexOf(producto);
+                carritoDeCompras.splice(Array, 1);
+                producto.cantidad = 1
+            }
+            })
+        }
+    }
+
 
     function imprimirEnCarrito() {
+        $("#carrito").empty()
       for (let producto of carritoDeCompras) {
           $("#carrito").append(`
           <div class="productoCarrito" id="div${producto.id}">
@@ -105,13 +137,15 @@ fetch('/json/productos.json')
                       <p class="precioProducto">$${producto.precio}</p>
                   </div>                    
               </div>
-              <div class="botonCarrito">
-                  <i class="fas fa-times botonParaEliminarProducto" id="${producto.id}"></i>
+              <div class="botonCarrito ">
+              <button class="botonParaEliminarProducto" id="${producto.id}">X</button>
               </div>
           </div>
           `);
       }
   }
+
+ 
 
 
       // Función para actualizar el precio del carrito
