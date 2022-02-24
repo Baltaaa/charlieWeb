@@ -31,11 +31,11 @@
             <div class="w-max rounded-full flex flex-grow ml-7 lg:ml-10">
                 <a href="../index.html"><img class="w-16 md:w-20 lg:w-32" src="../multimedia/logo.png" alt="logoCharlie"></a>
             </div>
-            <div class="w-12 h-12 flex  lg:w-4/5 lg:h-2/5 mr-8 self-center lg:hidden">
-                <img src="../multimedia/menuBurger.png" onclick="openMenu();" alt="menuBurger">
+            <div id="btnBurger" class="w-12 h-12 flex  lg:w-4/5 lg:h-2/5 mr-8 self-center lg:hidden">
+                <img src="../multimedia/menuBurger.png" alt="menuBurger">
             </div>
             <div id="menuBurger"
-                class="burgerMenu hidden bg-gray-900 lg:bg-transparent lg:flex flex-grow items-center justify-center absolute left-0 top-24 md:top-28  lg:relative lg:top-0 flex flex-col lg:flex-row w-full text-center">
+                class="burgerMenu h-screen bg-gray-900 lg:bg-transparent lg:flex grid place-content-start justify-center absolute left-0 top-24 md:top-28  lg:relative lg:top-0 lg:flex lg:h-max lg:w-full lg:flex-row w-full text-center">
                 <a class="text-white mx-2 my-2 font-bold   lg:rounded-lg  hover:ease-in-out  text-center hover:text-black hover:rounded-full py-2.5 px-5 duration-400 tracking-wider"
                     href="/secciones/tienda.html">Tienda</a>
                 <a class="text-white mx-2 my-2 font-bold   lg:rounded-lg  hover:ease-in-out  text-center hover:text-black hover:rounded-full py-2.5 px-5 duration-400 tracking-wider"
@@ -98,6 +98,8 @@
             </div>
         </footer>
     </div>
+    <script src="/js/mainTienda.js"></script>
+    <script src="/js/buttons.js"></script>
 </body>
 
 </html>

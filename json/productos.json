@@ -7,7 +7,8 @@
     "stock": true,
     "categoria": "Pastas",
     "img": "../multimedia/pastaTienda15.jpg",
-    "nombreCarrito": "Raviolones de calabaza"
+    "nombreCarrito": "Raviolones de calabaza",
+    "caja" : 1
 },
 {
     "id": "2",
@@ -17,7 +18,8 @@
     "stock": true,
     "categoria": "Pastas",
     "img": "../multimedia/pastaTienda9.jpg",
-    "nombreCarrito": "Gran Ravioli"
+    "nombreCarrito": "Gran Ravioli",
+    "caja" : 1
 },
 {
     "id": "3",
@@ -27,7 +29,8 @@
     "stock": true,
     "categoria": "Pastas",
     "img": "../multimedia/pastaTienda14.jpg",
-    "nombreCarrito": "Raviolones de verduras"
+    "nombreCarrito": "Raviolones de verduras",
+    "caja" : 1
 },
 {
     "id": "4",
@@ -37,7 +40,8 @@
     "stock": true,
     "categoria": "Pastas",
     "img": "../multimedia/pastaTienda8.jpg",
-    "nombreCarrito": "Raviolones de hongos"
+    "nombreCarrito": "Raviolones de hongos",
+    "caja" : 1
 },
 {
     "id": "5",
@@ -47,7 +51,8 @@
     "stock": true,
     "categoria": "Pastas",
     "img": "../multimedia/pastaTienda7.jpg",
-    "nombreCarrito": "Culurgiones"
+    "nombreCarrito": "Culurgiones",
+    "caja" : 1
 },
 {
     "id": "6",
@@ -57,7 +62,8 @@
     "stock": false,
     "categoria": "Pastas",
     "img": "../multimedia/pastaTienda13.jpg",
-    "nombreCarrito": "Panzzottis de jamon y espinaca"
+    "nombreCarrito": "Panzzottis de jamon y espinaca",
+    "caja" : 1
 },
 {
     "id": "7",
@@ -67,7 +73,8 @@
     "stock": true,
     "categoria": "Pastas",
     "img": "../multimedia/pastaTienda12.jpg",
-    "nombreCarrito": "Raviolones de pollo al verdeo"
+    "nombreCarrito": "Raviolones de pollo al verdeo",
+    "caja" : 1
 },
 {
     "id": "8",
@@ -77,7 +84,8 @@
     "stock": false,
     "categoria": "Pastas",
     "img": "../multimedia/pastaTienda2.jpg",
-    "nombreCarrito": "Tortellini de cherry's"
+    "nombreCarrito": "Tortellini de cherry's",
+    "caja" : 1
 },
 {
     "id": "9",
@@ -87,7 +95,8 @@
     "stock": true,
     "categoria": "Pastas",
     "img": "../multimedia/pastaTienda3.jpg",
-    "nombreCarrito": "Raviolones de cebolla caramelizada"
+    "nombreCarrito": "Raviolones de cebolla caramelizada",
+    "caja" : 1
 },
 {
     "id": "10",
@@ -97,6 +106,7 @@
     "stock": true,
     "categoria": "Pastas",
     "img": "../multimedia/pastas3.jpeg",
-    "nombreCarrito": "Raviolones de cordero al Malbec"
+    "nombreCarrito": "Raviolones de cordero al Malbec",
+    "caja" : 1
 }
 ]

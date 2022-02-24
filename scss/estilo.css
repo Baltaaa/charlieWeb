@@ -1,4 +1,12 @@
 @import url("//fonts.googleapis.com/css?family=Bungee+Shade");
+
+/* CLASES MANUALES */
+.activeScroll{
+  overflow-y: hidden;
+}
+
+
+
 * {
   padding: 0;
   margin: 0;
@@ -118,6 +126,17 @@ main #contenedorProductos .sombrahover {
   -webkit-box-shadow: -1px -1px 46px 20px white;
   box-shadow: -1px -1px 46px 20px white;
 }
+main #cartEntero::-webkit-scrollbar {
+  width: 12px;
+  background: black;
+}
+main #cartEntero::-webkit-scrollbar-thumb{
+  background: whitesmoke;
+  border-radius: 1.5rem;
+  width: 10px;
+  justify-content: center;
+  }
+
 
 main .tituloTienda h1 {
   font-family: "Lucida Grande", Lucida, Verdana, sans-serif;
