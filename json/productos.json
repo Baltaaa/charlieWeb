@@ -1,15 +1,4 @@
 [
-    {
-    "id": "1",
-    "nombreProd": "Raviolones en pasta verde (espinaca, perejil, albahaca) rellenos con calabaza asada, Ciboulette, queso crema , parmesano y queso Dambo.",
-    "precio": 300,
-    "cantidad": 15,
-    "stock": true,
-    "categoria": "Pastas",
-    "img": "../multimedia/pastaTienda15.jpg",
-    "nombreCarrito": "Raviolones de calabaza",
-    "caja" : 1
-},
 {
     "id": "2",
     "nombreProd": "Gran RAVIOLI en pasta al huevo rellenos con suprema de pollo, cebolla procesada, crema y queso Regianito.",
